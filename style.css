@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background: url(img/background.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilecard {
+  width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cardheader {
+  background: #0a2a47;
+  padding: 50px 30px;
+}
+
+.pic {
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #71b9ff, #e66767);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradien 2s linear infinite;
+}
+
+@keyframes animated-gradien {
+  25% {
+    background-position: left bottom;
+  }
+
+  50% {
+    background-position: right bottom;
+  }
+
+  75% {
+    background-position: right top;
+  }
+
+  100% {
+    background-position: left top;
+  }
+}
+
+.pic img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+
+.name {
+  color: #f2f2f2;
+  font-size: 28px;
+  font-weight: 600px;
+  margin: 10px 0;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+.decs {
+  font-size: 18px;
+  color: #cc3554;
+}
+
+.sm {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sm a {
+  color: #f2f2f2;
+  width: 56px;
+  font-size: 22px;
+  transition: 0.3s linear;
+}
+
+.sm a:hover {
+  color: #cc3554;
+}
+
+.cardfooter {
+  background: #f2f2f2;
+  padding: 20px 10px;
+}
+
+.tombol {
+  border-radius: 20px;
+}
